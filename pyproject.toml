@@ -1,3 +1,3 @@
 [build-system]
-requires = [ 'numpy', 'pillow', 'loguru', 'joblib', 'pytools', 'setuptools', "wheel"]
+requires = [ 'numpy', 'pillow', 'loguru', 'joblib', 'pytools', 'setuptools', "wheel", 'pytools']
 build-backend = "setuptools.build_meta"
