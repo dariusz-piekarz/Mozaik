@@ -6,21 +6,36 @@ from typing import Optional
 
 
 def main() -> None:
-    cfg_path: str = str(Path(__file__)) + "\\config.json"
+    """
+    Main function to execute the Mozaik application.
+    Reads configuration from the 'config.json' file,
+    loads images, and applies the specified strategy.
+
+    :return: None
+    """
+
+
+    cfg_path: str = str(dirname(Path(__file__))) + "\\config.json"
     cfg: Config = Config(cfg_path)
     show: bool = cfg.show == "True"
     output_path: str = cfg.output_image_path if cfg.output_image_path != "" else None
 
-    image_from_images(cfg.image_path,
-                      cfg.filler_images_dir_path,
+    image_from_images(cfg.filler_images_dir_path,
+                      cfg.image_path,
                       cfg.strategy,
                       tuple(cfg.image_size),
-                      tuple(cfg.sub_image_size),
+                      tuple(cfg.sub_images_size),
                       show,
                       output_path)
 
 
 def main2() -> None:
+    """"
+    Alternative main function to execute the Mozaik application.
+    Requests user input for configuration parameters.
+
+    :return: None
+    """
 
     image_path: str = ""
     while not isfile(image_path):
