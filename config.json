@@ -1,9 +1,9 @@
 {
-  "image_path": "C:\\Users\\Daric\\Desktop\\Dokumenty\\Dokumenty użytkowe\\zdj_wiza.jpg",
-  "filler_images_dir_path": "D:\\Zdjecia\\US I",
+  "image_path": "",
+  "filler_images_dir_path": "",
   "image_size": [200, 200],
   "sub_images_size": [50, 50],
-  "strategy": "pixel_mean",
+  "strategy": "pixel_mean_random",
   "show": "True",
   "output_image_path": ""
 }
