@@ -9,5 +9,5 @@ Output image admits several strategies of selection pixel-image. Below stategies
 ![](https://github.com/dariusz-piekarz/Mozaik/blob/master/duplication.png)
 3) `pixel_mean`: To each image is assign its mean RGB and thenit is searched for each pixel an image that is the closest to this pixel with respec to the $\mathcal{l}^2$ distance.
 ![](https://github.com/dariusz-piekarz/Mozaik/blob/master/pixel_mean.png)
-4)  `pixel_mean_random`: As in the case 3), mean RGB is calculated for each picture. Then it is searached for 30 lowest $l^2$ distancecs and using uniform distribution a picture is randomly selected.
+4)  `pixel_mean_random`: As in the case 3), mean RGB is calculated for each picture. Then it is searached for some number of lowest $l^2$ distances (dependent on the number if initially available filling-images) and using uniform distribution a picture is randomly selected.
 ![](https://github.com/dariusz-piekarz/Mozaik/blob/master/pixel_mean_random.png)
