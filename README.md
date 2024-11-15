@@ -1,7 +1,7 @@
 # Mozaik
 App replace pixels on selected picture by other images.
 Pictures are loaded from the disc, fillers should be is dedicated directory.
-It allows to show the output, save it, rescale either the main picture and unoformly standardise the size of images-pixels (i.e. iamges that will replace pixels.
+It allows to show the output, save it, rescale either the main picture and unoformly standardise the size of images-pixels (i.e. images that will replace pixels).
 Output image admits several strategies of selection pixel-image. Below stategies and samaple results:
 1) `straight`: number of pixels of the main image == number of images you want to replace its pixels by.
 
